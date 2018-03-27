@@ -4,7 +4,7 @@ from sys import argv
 
 wid=int(argv[1])
 with open ("secret.txt", "r") as myfile:
-    secret=myfile.readlines()[0]
+    secret=myfile.readlines()[0].strip()
 
 myacc = getAccountId(secret)
 print "Resolved account id:",myacc
