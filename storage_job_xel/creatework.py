@@ -3,7 +3,7 @@ from sys import argv
 
 secret=""
 with open ("secret.txt", "r") as myfile:
-    secret=myfile.readlines()[0]
+    secret=myfile.readlines()[0].strip()
 
 code=""
 with open ("simplejob.epl", "r") as myfile:
